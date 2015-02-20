@@ -41,14 +41,14 @@ function ApprovalsServer(config) {
 			if (q.url === '/verify') {
 				q.pipe(bl(function(err, data) {
 					var results = JSON.parse(data.toString());
-					var testName = config.testNamer(results.test);
+					var testName = config.testNamer(results.testName);
 					try {
-						approvals.verify(config.path, testName, results.actual);
-						console.log(results.test + ' - Success');
+						approvals.verify(config.path, testName, results.data);
+						console.log(results.testName + ' - Success');
 						r.writeHead(200);
 						r.end();
 					} catch(e) {
-						console.log(results.test + ' - Failed - ' + e);
+						console.log(results.testName + ' - Failed - ' + e);
 						r.writeHead(400);
 						r.end();
 					}
