@@ -41,7 +41,7 @@ Parameters:
 	  "data": "String to compare"
 	}
 
-### Verification example
+### From the browser
 
 The simplest thing possible is to do something like this.
 
@@ -58,6 +58,10 @@ The simplest thing possible is to do something like this.
 	};
 
 	verify('MyTest', JSON.stringify(data, null, 2));
+
+### Using curl
+
+	curl -H "Content-Type: application/json" -d '{"Name": "Kristoffer","Age": "Unknown"}' http://localhost:1338/verify
 
 ### More about Approvaltests
 
