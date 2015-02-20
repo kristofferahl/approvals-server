@@ -1,0 +1,32 @@
+{
+  "name": "approvals-server",
+  "version": "0.1.0",
+  "description": "HTTP server for running approvals from the browser",
+  "keywords": [
+    "approvaltests",
+    "approvals",
+    "tests",
+    "server"
+  ],
+  "author": {
+    "name": "Kristoffer Ahl",
+    "url": "http://77dynamite.com"
+  },
+  "homepage": "http://approvaltests.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kristofferahl/approvals-server.git"
+  },
+  "license": {
+    "type": "Apache",
+    "url": "http://approvaltests.sourceforge.net//blob/master/LICENSE-Apache"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "approvals": "^0.0.25",
+    "bl": "^0.9.4"
+  }
+}
