@@ -1,5 +1,4 @@
-# approvals-server
-
+# approvals-server [![NPM version](https://badge.fury.io/js/approvals-server.png)](http://badge.fury.io/js/approvals-server)
 A simple node HTTP server for running approval tests from the browser.
 
 ## Install
