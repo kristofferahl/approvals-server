@@ -22,7 +22,7 @@ If you're not using npm, simply copy the file `index.js` to a directory of your 
 	});
 
 If you need to you can manipulate the filenames by overriding the testNamer function like this:
-	
+
 	var config = {
 		testNamer: function (name) {
 			return name.replace(/\W+/g, '-');
@@ -60,7 +60,7 @@ The simplest thing possible is to do something like this.
 
 ### Using curl
 
-	curl -H "Content-Type: application/json" -d '{"Name": "Kristoffer","Age": "Unknown"}' http://localhost:1338/verify
+	curl -H "Content-Type: application/json" -d '{ "testName": "Footest", "data": "Bar" }' http://localhost:1338/verify
 
 ### More about Approvaltests
 
