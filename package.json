@@ -17,16 +17,13 @@
     "type": "git",
     "url": "https://github.com/kristofferahl/approvals-server.git"
   },
-  "license": {
-    "type": "Apache",
-    "url": "http://approvaltests.sourceforge.net//blob/master/LICENSE-Apache"
-  },
+  "license": "Apache",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "approvals": "^0.x",
+    "approvals": "^1.3.x",
     "bl": "^0.9.4"
   }
 }
